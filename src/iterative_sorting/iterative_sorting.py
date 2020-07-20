@@ -8,10 +8,27 @@ def selection_sort(arr):
         # (hint, can do in 3 loc)
         # Your code here
 
+        j = i
+        while j < len(arr) and j < len(arr) -1:
+            if arr[smallest_index] < arr[j+1]:
+                j += 1
+            else:
+                smallest_index = j+1
+                j += 1
+            
+        # check = cur_index
+        # while check < len(arr)-1:
+        #     if check < smallest_index:
+        #         smallest_index = check
+        #     check += 1
+        # return smallest_index
+
 
         # TO-DO: swap
         # Your code here
-
+                arr[smallest_index], arr[cur_index] = arr[cur_index], arr[smallest_index]
+                smallest_index = cur_index
+        i += 1
     return arr
 
 
