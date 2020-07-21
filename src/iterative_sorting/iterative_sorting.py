@@ -24,9 +24,9 @@ def selection_sort(arr):
 
 # TO-DO:  implement the Bubble Sort function below
 def bubble_sort(arr):
+    changes = 1
     for i in range(0, len(arr) - 1):
         cur_index = i
-        changes = 1
         if changes > 0:
             changes = 0
             j = 0
